@@ -6,8 +6,8 @@
 
 1. Fork this repo, and clone it into your `develop` folder on your local machine.
 2. Change directories into `rails_partials_helpers`, and `bundle install`.
-3. Run `rake db:create db:migrate` (make sure PosgreSQL is running).
-4. Start your Rails server, then you're ready to go!
+3. Run `rake db:setup` (make sure PosgreSQL is running).
+4. Start your Rails server; then you're ready to go!
 
 ## Steps to Refactor
 
