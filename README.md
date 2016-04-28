@@ -17,4 +17,4 @@
 1. While you're at it, refactor the Bootstrap nav in the application layout to use a partial as well.
 1. Find all redirects (`redirect_to`) in the **controller methods**, and refactor them to use path prefixes. (<a href="http://guides.rubyonrails.org/routing.html#prefixing-the-named-route-helpers" target="_blank">docs</a>)
 
-Refer to the [solution branch](https://github.com/sf-wdi-24/rails_partials_helpers/tree/solution) for guidance.
+Refer to the [solution branch](/../../tree/solution) for guidance.
