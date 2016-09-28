@@ -4,8 +4,8 @@
 
 ## Getting Started
 
-1. Fork this repo, and clone it into your `develop` folder on your local machine.
-2. Change directories into `rails_partials_helpers`, and `bundle install`.
+1. Fork this repo, and clone it to your local machine.
+2. Change directories into `rails_views_training`, and `bundle install`.
 3. Run `rake db:setup` (make sure PosgreSQL is running).
 4. Start your Rails server; then you're ready to go!
 
