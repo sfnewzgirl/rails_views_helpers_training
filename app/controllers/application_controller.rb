@@ -1,8 +1,4 @@
 class ApplicationController < ActionController::Base
-<<<<<<< HEAD
-=======
-  # Prevent CSRF attacks by raising an exception.
->>>>>>> master
   protect_from_forgery with: :exception
 
   def current_user
@@ -14,8 +10,5 @@ class ApplicationController < ActionController::Base
   def authorize
     redirect_to login_path unless current_user
   end
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 end
