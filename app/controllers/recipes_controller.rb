@@ -36,13 +36,13 @@ class RecipesController < ApplicationController
     if current_user == @recipe.user
       if @recipe.update_attributes(recipe_params)
         flash[:notice] = "Successfully updated recipe."
-        redirect_to "/recipes/#{@recipe.id}"
+        redirect_to recipe_path(@recipe)
       else
         flash[:error] = @recipe.errors.full_messages.join(", ")
-        redirect_to "/recipes/#{@recipe.id}/edit"
+        redirect_to recipe_path(@recipe)
       end
     else
-      redirect_to "/users/#{current_user.id}"
+      redirect_to edit_recipe_path(@recipe)
     end
   end
 
@@ -52,9 +52,9 @@ class RecipesController < ApplicationController
       @recipe.destroy
       flash[:notice] = "Successfully deleted recipe."
     end
-    redirect_to "/users/#{current_user.id}"
+    redirect_to user_path(current_user)
   end
-
+  
   private
 
     def recipe_params
