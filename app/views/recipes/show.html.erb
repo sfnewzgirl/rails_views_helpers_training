@@ -9,11 +9,11 @@
 <% if current_user && current_user == @recipe.user %>
   <hr>
   <p>
-    <!-- refactor two a -->
+    <!-- refactor a three -->
     <%= link_to 'Edit Recipe', edit_recipe_path(@recipe) %>
     <!-- <a href="/recipes/<%= @recipe.id %>/edit" class="btn btn-default">Edit Recipe</a> -->
-    <!-- refactor three a -->
-    <%= link_to 'Delete Recipe', delete_recipe_path(@receipt) %>
+    <!-- refactor a four -->
+    <%= link_to 'Delete Recipe', recipe_path(@recipe) %>
     <!-- <a href="/recipes/<%= @recipe.id %>" data-method="delete" class="btn btn-default" >Delete Recipe</a> -->
   </p>
 <% end %>
