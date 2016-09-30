@@ -1,8 +1,12 @@
 <h1>Recipe Book</h1>
 <hr>
 <% @recipes.each do |recipe| %>
-  <strong><%= recipe.name %></strong> - <a href="/recipes/<%= recipe.id %>">View Recipe</a>
+  <!-- # refactor a one -->
+  <strong><%= recipe.name %></strong> - <%= link_to 'View Recipe', recipe_path(recipe) %>
+  <!-- <a href="/recipes/<%= recipe.id %>">View Recipe</a> -->
   <hr>
 <% end %>
 
-<a href="/recipes/new">Add Recipe</a>
+<!-- # refactor a two -->
+<%= link_to 'Add Recipe', new_recipe_path %>
+<!-- <a href="/recipes/new">Add Recipe</a> -->
